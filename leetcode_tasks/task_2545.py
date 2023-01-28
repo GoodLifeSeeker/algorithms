@@ -38,4 +38,5 @@ from typing import List
 def sortTheStudents(score: List[List[int]], k: int) -> List[List[int]]:
     return sorted(score, key=lambda a: a[k], reverse=True)
 
+
 print(sortTheStudents([[10,6,9,1],[7,5,11,2],[4,8,3,15]], 2))

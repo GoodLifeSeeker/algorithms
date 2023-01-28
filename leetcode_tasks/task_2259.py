@@ -12,11 +12,12 @@ number consists of digits from '1' to '9'.
 digit is a digit from '1' to '9'.
 digit occurs at least once in number.
 '''
+from typing import List
 
 
 def removeDigit(number: str, digit: str) -> str:
     '''Func name was taken from the task.'''
-    new_number = []
+    new_number: List[str] = []
     for i in range(len(number)):
         if number[i] == digit:
             if i == 0:

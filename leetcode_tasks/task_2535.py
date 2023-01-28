@@ -12,6 +12,7 @@ Note that the absolute difference between two integers x and y is defined as |x 
 '''
 from typing import List
 
+
 def differenceOfSum( nums: List[int]) -> int:
     first_sum: int = 0
     second_sum: int = 0

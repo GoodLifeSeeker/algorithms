@@ -13,8 +13,8 @@ Constraints:
 '''
 
 def alternateDigitSum(n: int) -> int:
-    flag = True
-    result = 0
+    flag: bool = True
+    result: int = 0
     for num in str(n):
         if flag:
             result += int(num)

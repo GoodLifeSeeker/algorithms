@@ -12,8 +12,9 @@ Return the matrix mat after performing every query.
 '''
 from typing import List
 
+
 def rangeAddQueries(n: int, queries: List[List[int]]) -> List[List[int]]:
-    mat = [[0] * n for _ in range(n)]
+    mat: List[List[int]] = [[0] * n for _ in range(n)]
     for r1, c1, r2, c2 in queries:
         mat[r1][c1] += 1
         if r2 + 1 < n:
